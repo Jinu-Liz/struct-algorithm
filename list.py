@@ -26,3 +26,20 @@ if __name__ == '__main__':
     # for문을 사용한 데이터 꺼내기
     for egg in eggs_for:
         print('egg :', 'boil', egg)
+
+    # for-in 형식 : range 함수
+    print('0 ~ 10 미만')
+    for i in range(10):
+        print(i)
+
+    print('0 ~ 10 미만, 2마다')
+    for i in range(0, 10, 2):
+        print(i)
+
+    print('10 ~ 0 초과, -3마다')
+    for i in range(10, 0, -3):
+        print(i)
+
+    # 리스트 내포 : 리스트 안에 for-in문을 넣어 생성이 편리
+    inner_list = [i for i in range(10)]
+    print('inner_list :', inner_list)

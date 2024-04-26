@@ -138,18 +138,18 @@ class BSTree:
 
 
 if __name__ == '__main__':
-    # nd = Node(33)
-    # print(nd.key)
-    #
-    # print(nd.left)
-    # print(nd.right)
-    # childR = Node(35)
-    # childL = Node(32)
-    #
-    # nd.right = childR
-    # nd.left = childL
-    # print(nd.left.key)
-    # print(nd.right.key)
+    nd = Node(33)
+    print(nd.key)
+
+    print(nd.left)
+    print(nd.right)
+    childR = Node(35)
+    childL = Node(32)
+
+    nd.right = childR
+    nd.left = childL
+    print(nd.left.key)
+    print(nd.right.key)
 
     bst=BSTree()
     bst.insert(Node(56))
@@ -168,6 +168,7 @@ if __name__ == '__main__':
 
     bst.print(bst.root)
     print()
-    # print(bst.find(56))
+    print(bst.find(56))
+    print()
     bst.remove(56)
     bst.print(bst.root)
